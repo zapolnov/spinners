@@ -1,22 +1,35 @@
 # Spinners
 
-Everyone needs them, no one wants to make them. Many of the ones you can scrape from the internet are kind of lame and only come in one size.
+I got tired of trying to find high quality spinners out there. Most of the ones you can scrape from the internet are kind of lame, not customizable, and only come in one size. (And Ajaxloader, great as it is, has hiccups in the frame that causes this weird strobing effect).
 
-Here are some basic spinners with Apple-like proportions, available in 24px-192px sizes, so you can have spinners at 24px, 48px, and 96px at retina and normal resolutions.
+They're also not great when dealing with retina displays. This spinner set has enough intervals to cover you up to 96pt spinners.
 
-I'll be making some sized 16-32-64-128 in the near future.
+### Contents
 
-Make those loading screens a bit more dapper, and always provide user feedback.
+Project contains basic spinners, pixel-fitted as possible, in **black** and **white**, with dimensions of:
 
-### GIF 
+16 - 32 ... compact 8-leaf style (e.g. one found in iOS Status Bar)
+24 - 48 - 96 - 192 ... normal 12-leaf style (found everywhere else)
 
-I've already created .gifs for the loaders (black on white background, white on black background). If you don't need to customize them, then you're good to go.
+/gif/
+* .gif versions of the files. 
+* They may be a little chubby, but .gifs usually are.
 
-I didn't spend too much time optimizing for file size, so their footprint may be a bit chubby for your taste.
+/psd/
+* .psd originals of all spinners broken into layers.
+* Customize colors, or export lighter weight versions of gifs.
 
-### PSD
-Everything should be broken out into layers. If you need to modify the background colors, there should be a background layer in each file. Change the color, and add it to each pane of the animation.
 
-Currently, the frame rate of all animations is 0.5s, which might be a little speedy for your taste. Above 0.7s, though, it starts to feel a little slow.
+### Technical
 
-MIT License.
+**Rotation Interval** ~0.8s rotation intervals seems to work the best for me; not fast enough to make you stressed out, and not so slow that the program feels slow.
+
+**Why not CSS?** You need step animation to make this type of spinner feel like a true spinner. CSS3 step animations aren't available on all browsers, and they feel especially **laggy on mobile** platforms.
+
+I'll add some CSS/HTML snippets for those who prefer that method in the future.
+
+
+
+
+
+MIT License. Make the internet better.
